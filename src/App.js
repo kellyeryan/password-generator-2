@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import useClipboard from "react-use-clipboard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Tooltip from 'react-bootstrap/Tooltip'
-import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
-import Row from 'react-bootstrap/Row'
+import {
+  Button,
+  ButtonGroup,
+  ButtonToolbar,
+  Card,
+  Col,
+  Container,
+  Form,
+  OverlayTrigger,
+  Row,
+  Tooltip,
+} from 'react-bootstrap'
 
 export function App({ initialData }) {
   const [characters, setCharacters] = useState("");
